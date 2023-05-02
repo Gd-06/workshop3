@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Scanner;
+
+public class Main {
+
+        public static void main(String[]args){
+
+            ArrayList<Integer> even = new ArrayList<Integer>();
+            ArrayList<Integer> odd = new ArrayList<Integer>();
+
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("enter size : ");
+            int size = sc.nextInt();
+            System.out.println("enter "+ size + " num : ");
+            int num[] = new int[size];
+
+            for(int i=0; i<size; i++) {
+                num[i] = sc.nextInt();
+
+            }
+
+            for(int i=0; i<num.length; i++) {
+                System.out.println(num[i]);
+
+                if (num[i] % 2 == 0) {
+                    even.add(num[i]);
+                } else  {
+                    odd.add(num[i]);
+                }
+            }
+
+
+            for(int even1:even);
+                System.out.println(even+",");
+            for(int odd1:odd);
+            System.out.println(odd+",");
+
+
+            }
+
+        }
